@@ -1,0 +1,110 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "buttons";
+@import "loading";
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+    @include media(minM) {
+        font-size: 1.3rem;
+    }
+    line-height: 1.8;
+    background-color: $colorb2;
+    height: 100%;
+    color: #222;
+    font-family: Raleway;
+}
+
+::selection {
+    background: #d8eccd;
+    text-shadow: none;
+}
+
+::-webkit-input-placeholder {
+    color: $colorb2;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+:-moz-placeholder {
+    color: $colorb2;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    color: $colorb2;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder {
+    color: $colorb2;
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    &:hover {
+        color: #555;
+    }
+    &:active {
+        color: $colorn1;
+    }
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
